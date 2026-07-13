@@ -45,12 +45,14 @@ engine:
     - ascii_segmentor
     - matcher
     - affix_segmentor@rime_mint                # 拼音
+    - affix_segmentor@unicode
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - table_translator
+    - lua_translator@*unicode_translator                # Unicode 编码候选
     - lua_translator@*shijian                            # 时间、日期、星期、月份、问候、节气、节日，N模式
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
@@ -190,6 +192,7 @@ translator:
     - "^z.*$"
   enable_user_dict: false           # 关闭用户词典，根据用户输入调频（默认开启，形码本身字重低或没有，理论上不需要调频）
 
+
 # 英文输入
 melt_eng:
   dictionary: melt_eng           # 英文词典
@@ -246,9 +249,15 @@ punctuator:
       ">": ["》", "〉", "»", ">"]
 
 # 反查映射
+unicode:
+  tag: unicode
+  prefix: "Uc"
+  tips: 〔Unicode〕
+
 recognizer:
   import_preset: default
   patterns:
+    unicode: "^Uc[a-z]*'?$"
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
