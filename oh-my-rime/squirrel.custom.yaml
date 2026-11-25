@@ -13,11 +13,12 @@ patch:
   "style/preedit_type": composition
 
   "style/text_orientation": horizontal
-  "style/candidate_format": "%c\u2005%@\u2005" # 编号 %c 和候选词 %@ 前后的空间
+  "style/candidate_format": "[label]\u2005[candidate] [comment]" # Squirrel 1.0+ 新语法，%c/%@ 已弃用；U+2005 保持原有窄间距
   "style/candidate_list_layout": linear   # 候选排布：层叠 stacked | 行 linear
   "style/translucency": true
   "style/mutual_exclusive": true
-  "style/corner_radius": 15.0
+  "style/surrounding_extra_expansion": 0 # 未高亮候选背景不再额外放大，横排更整齐
+  "style/corner_radius": 16.0
   "style/hilited_corner_radius": 13.0
   "style/border_height": -5.0
   "style/border_width": -5.0
@@ -36,8 +37,8 @@ patch:
     shadow_color: 0xB4000000                 # 阴影
     label_color: 0xE66A564C                     # 标签
     comment_text_color: 0xE67087D0           # 注释
-    border_color: 0x80F4EFEC                 # 边框
-    back_color: 0x80F4EFEC                   # 背景
+    border_color: 0x66F4EFEC                 # 边框（0x80→0x66，玻璃感更强）
+    back_color: 0x66F4EFEC                   # 背景
     # 普通候选项配色
     # candidate_back_color: 0x80E6F4EFEC      # 背景
     # candidate_border_color:                # 边框
@@ -48,9 +49,9 @@ patch:
     hilited_back_color: 0xFFBBBC8F             # 背景
     # hilited_shadow_color:                  # 阴影
     # 选中的候选区域配色
-    hilited_mark_color: 0xFF7087D0             # 标签前的标记
-    hilited_label_color: 0xFF40342E            # 标签
-    hilited_comment_text_color: 0xFF7087D0     # 注释
+    hilited_mark_color: 0xFF6A61BF             # 标签前的标记（极光红；Windows 端 mark_text » 会用到）
+    hilited_label_color: 0xFF6A564C            # 标签（原版远山值：略淡于正文，形成层次）
+    hilited_comment_text_color: 0xFF6A61BF     # 注释（原版远山用极光红 BF616A；原橙 D08770 在霜青高亮上仅 1.4:1）
     hilited_candidate_text_color: 0xFF40342E   # 文字
     hilited_candidate_border_color: 0xFFBBBC8F # 边框
     hilited_candidate_back_color: 0xFFBBBC8F   # 背景
@@ -66,11 +67,11 @@ patch:
     color_format: abgr # 颜色格式：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr 默认）
     # 默认配色
     text_color: 0xE6FAF8F5 # 文字
-    shadow_color: 0xB4B7B0A4 # 阴影
+    shadow_color: 0xB4000000 # 阴影（统一黑色；原浅灰在深色主题会形成光晕，Windows 端会渲染此键）
     label_color: 0xE6B7B0A4 # 标签
-    comment_text_color: 0xE62E46E1 # 注释
-    border_color: 0x80231F1B # 边框
-    back_color: 0x80231F1B # 背景
+    comment_text_color: 0xE63C5AE8 # 注释（强调色朱红微调 #E85A3C，暗底 4.7:1）
+    border_color: 0x66231F1B # 边框（0x80→0x66，玻璃感更强）
+    back_color: 0x66231F1B # 背景
     # 普通候选项配色
     # candidate_back_color: 0x80231F1B # 背景
     # candidate_border_color:                # 边框
@@ -81,10 +82,10 @@ patch:
     hilited_back_color: 0xDD9E9F5F # 背景
     # hilited_shadow_color:                  # 阴影
     # 选中的候选区域配色
-    hilited_mark_color: 0xFF2E46E1 # 标签前的标记
-    hilited_label_color: 0xFFFAF8F5 # 标签
-    hilited_comment_text_color: 0xFF2E46E1 # 注释
-    hilited_candidate_text_color: 0xFFFAF8F5 # 文字
+    hilited_mark_color: 0xFFB4C4FF             # 标签前的标记（浅珊瑚提亮 #FFC4B4；Windows 端 mark_text » 会用到）
+    hilited_label_color: 0xFFE9DED8 # 标签（柔白 #D8DEE9，略淡于正文形成层次）
+    hilited_comment_text_color: 0xFFB4C4FF # 注释（浅珊瑚提亮 #FFC4B4）
+    hilited_candidate_text_color: 0xFFFAF8F5 # 文字（白色）
     hilited_candidate_border_color: 0xDD9E9F5F # 边框
     hilited_candidate_back_color: 0xDD9E9F5F # 背景
     # hilited_candidate_shadow_color:        # 阴影

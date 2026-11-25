@@ -36,35 +36,50 @@ patch:
   "style/layout/corner_radius": 4
   "style/layout/round_corner": 4
 
-  "preset_color_schemes/nord_dark": # 在 `style/color_schema` 指定的配色方案值
-    name: "黑山／Nord Dark" # 方案设置中显示的配色名称
-    author: Jungheil # 配色作者名称
-    color_format: rgba # 颜色格式：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr 默认）
+  "preset_color_schemes/nord": # 浅色：与 macOS 端 squirrel.custom.yaml 同一套色板
+    name: "远山／Nord"
+    author: aixmoyu（Mirtle 原案）
+    color_format: abgr # 两端统一 abgr；Windows 无毛玻璃，背景用不透明
     # 默认配色
-    text_color: 0xf5f8fa # 文字
-    shadow_color: 0xa4b0b7b4 # 阴影
-    label_color: 0xa4b0b7 # 标签
-    comment_text_color: 0xe1462e # 注释
-    border_color: 0x1b1f23 # 边框
-    back_color: 0x1b1f23 # 背景
+    text_color: 0xE640342E                   # 文字
+    shadow_color: 0xB4000000                 # 阴影
+    label_color: 0xE66A564C                  # 标签
+    comment_text_color: 0xE67087D0           # 注释
+    border_color: 0xFFECEFF4                 # 边框（不透明）
+    back_color: 0xFFECEFF4                   # 背景（不透明）
     # 普通候选项配色
-    candidate_back_color: 0x1b1f23 # 背景
-    candidate_border_color:                # 边框
-    # candidate_shadow_color:                # 阴影
-    candidate_text_color: 0xf5f8fa # 文字
+    candidate_text_color: 0xE640342E         # 文字
     # 编码区域配色
-    hilited_text_color: 0xf5f8fa # 文字
-    # hilited_back_color: 0x5f9f9e           # 背景
-    # hilited_shadow_color:                  # 阴影
+    hilited_text_color: 0xFF40342E           # 文字
+    hilited_back_color: 0xFFBBBC8F           # 背景
     # 选中的候选区域配色
-    hilited_mark_color: 0xe1462e # 标签前的标记
-    hilited_label_color: 0xf5f8fa # 标签
-    hilited_comment_text_color: 0xe1462e # 注释
-    hilited_candidate_text_color: 0xf5f8fa # 文字
-    hilited_candidate_border_color: 0x5f9f9e # 边框
-    hilited_candidate_back_color: 0x5f9f9e # 背景
-    # hilited_candidate_shadow_color:        # 阴影
-    # inline_preedit: false 
-    # 时翻页箭头颜色，不设置则不显示箭头
-    # nextpage_color: 0xf5f8fa               # 下一页
-    # prevpage_color: 0xf5f8fa               # 上一页
+    hilited_mark_color: 0xFF6A61BF           # 标签前的标记（极光红，配 mark_text »）
+    hilited_label_color: 0xFF6A564C          # 标签（原版远山值：略淡于正文，形成层次）
+    hilited_comment_text_color: 0xFF6A61BF   # 注释
+    hilited_candidate_text_color: 0xFF40342E # 文字
+    hilited_candidate_border_color: 0xFFBBBC8F # 边框
+    hilited_candidate_back_color: 0xFFBBBC8F # 背景
+
+  "preset_color_schemes/nord_dark": # 深色：与 macOS 端同步修复（青底深字、霜蓝注释）
+    name: "黑山／Nord Dark"
+    author: aixmoyu（Jungheil 原案）
+    color_format: abgr # 两端统一 abgr；Windows 无毛玻璃，背景用不透明
+    # 默认配色
+    text_color: 0xE6FAF8F5 # 文字
+    shadow_color: 0xB4000000 # 阴影（深色主题用黑影；原浅灰会形成光晕）
+    label_color: 0xE6B7B0A4 # 标签
+    comment_text_color: 0xE63C5AE8 # 注释（强调色朱红微调 #E85A3C，暗底 4.7:1）
+    border_color: 0xFF231F1B # 边框（不透明）
+    back_color: 0xFF231F1B # 背景（不透明）
+    # 普通候选项配色
+    candidate_text_color: 0xE6FAF8F5 # 文字
+    # 编码区域配色
+    hilited_text_color: 0xFFFAF8F5 # 文字
+    hilited_back_color: 0xDD9E9F5F # 背景
+    # 选中的候选区域配色
+    hilited_mark_color: 0xFFB4C4FF # 标签前的标记（浅珊瑚提亮 #FFC4B4）
+    hilited_label_color: 0xFFE9DED8 # 标签（柔白 #D8DEE9，略淡于正文形成层次）
+    hilited_comment_text_color: 0xFFB4C4FF # 注释（浅珊瑚提亮 #FFC4B4）
+    hilited_candidate_text_color: 0xFFFAF8F5 # 文字（白色）
+    hilited_candidate_border_color: 0xDD9E9F5F # 边框
+    hilited_candidate_back_color: 0xDD9E9F5F # 背景
