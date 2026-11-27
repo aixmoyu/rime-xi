@@ -1,0 +1,58 @@
+patch:
+  cn_en/enable_completion: true
+  cn_en/initial_quality: 0.90000000000000002
+  corrected:
+    dictionary: rime_mint
+    enable_completion: false
+    enable_correction: false
+    enable_sentence: false
+    initial_quality: 0.20000000000000001
+    prism: rime_mint_mobile
+    spelling_hints: 2
+    user_dict: rime_mint_correction
+  custom_phrase/db_class: stabledb
+  custom_phrase/dictionary: ""
+  custom_phrase/enable_completion: false
+  custom_phrase/enable_sentence: false
+  custom_phrase/initial_quality: 1.200000
+  custom_phrase/user_dict: custom_phrase
+  engine/translators/+:
+    - script_translator@corrected
+    - table_translator@custom_phrase
+  grammar/collocation_max_length: 8
+  grammar/collocation_min_length: 3
+  grammar/collocation_penalty: -10
+  grammar/language: wanxiang-lts-zh-hans
+  grammar/non_collocation_penalty: -12
+  grammar/rear_penalty: -30
+  grammar/weak_collocation_penalty: -24
+  melt_eng/enable_completion: true
+  recognizer/patterns/email: ^[a-z][-_.0-9a-z]*@.*$
+  recognizer/patterns/url: ^(www[.]|https?:|ftp:|mailto:).*$|^[a-z]+[.].+$
+  translator/+:
+    translator/prism: rime_mint_mobile_correction
+  translator/contextual_suggestions: false
+  translator/max_homographs: 5
+  translator/max_homophones: 5
+
+  "engine/translators/@after 1": lua_translator@*key_correction
+
+  key_correction:
+    layout: qwerty
+    enabled: true
+    protect_first: true
+    min_length: 4
+    max_candidates: 4
+    min_gain: 3
+    max_lookups: 3
+
+  key_correction_lookup:
+    dictionary: rime_mint
+    prism: rime_mint_mobile
+    enable_user_dict: false
+    enable_completion: false
+    enable_word_completion: false
+    enable_correction: false
+    enable_sentence: false
+    spelling_hints: 24
+    always_show_comments: true

@@ -20,7 +20,28 @@ patch:
   "recognizer/patterns/url": "^(www[.]|https?:|ftp:|mailto:).*$|^[a-z]+[.].+$"
 
   engine/translators/+:
+    - lua_translator@*key_correction
     - script_translator@corrected	# 添加次翻译器：自动纠错
+
+  key_correction:
+    layout: qwerty
+    enabled: true
+    protect_first: true
+    min_length: 4
+    max_candidates: 4
+    min_gain: 3
+    max_lookups: 3
+
+  key_correction_lookup:
+    dictionary: rime_mint
+    prism: rime_mint
+    enable_user_dict: false
+    enable_completion: false
+    enable_word_completion: false
+    enable_correction: false
+    enable_sentence: false
+    spelling_hints: 24
+    always_show_comments: true
 
   translator/+:
     translator/prism: rime_mint		# 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字；如主翻译器未指定名称，需取消注释并设置该项
