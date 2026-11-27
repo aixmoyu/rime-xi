@@ -1,6 +1,10 @@
 # default settings
 # encoding: utf-8
-__include: ./public/info/default:/
+__include: ./../public/info/default:/
 name: 摸鱼26键
-version: 1.0.0
+author: aixmoyu
+version: 1.0.1
+description: 基于 oh-my-rime 的摸鱼 26 键布局
+url: https://github.com/aixmoyu/rime-xi
+update_time: 2026-11-26
 

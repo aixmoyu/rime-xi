@@ -1,0 +1,28 @@
+schema_id: rime_ice_26
+schema: bim-pinyin
+schema_dir: schemas/
+theme: default
+theme_dir: themes/
+font: default
+font_dir: fonts/
+symbol: default
+symbol_dir: symbols/
+emoticon: default
+emoticon_dir: emoticons/
+speech: volcengine
+speech_dir: speeches/
+config_version: 1.0
+sound_on: false
+sound_volume: 0
+sound_effect: default
+haptics_on: true
+haptics_volume: 1
+haptic: system
+haptic_dir: haptics/
+global_keyboard_menu: [
+  eisu_toggle_emoji,                  # 表情
+  eisu_toggle_clip_board,             # 原生剪贴板
+  function_handwriting_find,          # 手写找字
+  eisu_toggle_one_hand_board,         # 单手模式
+]
+

@@ -103,6 +103,25 @@ preset_keys:
           function_keyboard_newline,
         ],
     }
+  # 剪切快捷面板
+  # 支持系统：鸿蒙
+  eisu_toggle_cut_quick_panel:
+    {
+      icon: "rectangle_and_cut.svg",
+      label: "剪切",
+      send: Eisu_toggle,
+      select: _quick_panel,
+      option:
+        [
+          function_keyboard_selectAllCut,
+          function_keyboard_selectAllCopy,
+          function_keyboard_selectAll,
+          function_keyboard_cut,
+          function_keyboard_copy,
+          function_keyboard_paste,
+          function_keyboard_newline,
+        ],
+    }
   # 键盘选择
   # 支持系统：鸿蒙
   eisu_toggle_schema_board:
@@ -111,6 +130,15 @@ preset_keys:
       label: "键盘选择",
       send: Eisu_toggle,
       select: _schema_dir_board,
+    }
+  # 单手模式
+  # 支持系统：鸿蒙
+  eisu_toggle_one_hand_board:
+    {
+      icon: "onehand.svg",
+      label: "单手模式",
+      send: Eisu_toggle,
+      select: _one_hand_board,
     }
   # 声音
   # 支持系统：鸿蒙，iOS
@@ -392,6 +420,14 @@ preset_keys:
       send: Eisu_toggle,
       select: _phrases_board,
     }
+  # 常用语（鸿蒙原生）
+  eisu_toggle_custom_phrase_board:
+    {
+      icon: "doc_text.svg",
+      label: "常用语",
+      send: Eisu_toggle,
+      select: _custom_phrase_board,
+    }
 
   #触感
   # 支持系统：鸿蒙，iOS
@@ -508,6 +544,41 @@ preset_keys:
   participle: { icon: "textformat.svg", label: 分词, send: "'" }
   #分号
   send_semicolon: { icon: "textformat.svg", label: ";", send: ";" }
+
+  # 上滑/符号页：用 send 让 Rime 决定全角半角，同时给出稳定标签
+  send_0: { label: "0", send: 0 }
+  send_1: { label: "1", send: 1 }
+  send_2: { label: "2", send: 2 }
+  send_3: { label: "3", send: 3 }
+  send_4: { label: "4", send: 4 }
+  send_5: { label: "5", send: 5 }
+  send_6: { label: "6", send: 6 }
+  send_7: { label: "7", send: 7 }
+  send_8: { label: "8", send: 8 }
+  send_9: { label: "9", send: 9 }
+  send_bang: { label: "!", send: "!" }
+  send_at: { label: "@", send: "@" }
+  send_hash: { label: "#", send: "#" }
+  send_dollar: { label: "$", send: "$" }
+  send_percent: { label: "%", send: "%" }
+  send_amp: { label: "&", send: "&" }
+  send_star: { label: "*", send: "*" }
+  send_lparen: { label: "(", send: "(" }
+  send_rparen: { label: ")", send: ")" }
+  send_quote: { label: "'", send: "'" }
+  send_dquote: { label: '"', send: '"' }
+  send_slash: { label: "/", send: "/" }
+  send_minus: { label: "-", send: "-" }
+  send_equal_text: { label: "=", send: "=" }
+  send_backslash: { label: "\\", send: "\\" }
+  send_semicolon_text: { label: ";", send: ";" }
+  send_question: { label: "?", send: "?" }
+  send_colon: { label: ":", send: ":" }
+  send_underscore: { label: "_", send: "_" }
+  send_tilde: { label: "~", send: "~" }
+  send_plus: { label: "+", send: "+" }
+  send_comma: { label: ",", send: "," }
+  send_period_text: { label: ".", send: "." }
 
   select_second: { label: "次选", send: 2 }
   select_third: { label: "三选", send: 3 }
@@ -676,6 +747,29 @@ preset_keys:
   eisu_toggle_ABC_default:
     { icon: "textformat.svg", label: "英", send: Eisu_toggle, select: default }
 
+  # 华为风格底栏：纯文字键，不带图标
+  eisu_toggle_符_symbols_text:
+    { label: "符号", send: Eisu_toggle, select: symbols }
+  eisu_toggle_符_symbols_sm_md_text:
+    { label: "符号", send: Eisu_toggle, select: symbols_sm_md }
+  eisu_toggle_123_number_text:
+    { label: "123", send: Eisu_toggle, select: number }
+  eisu_toggle_123_number_sm_md_text:
+    { label: "123", send: Eisu_toggle, select: number_sm_md }
+  eisu_toggle_ABC_english_text:
+    { label: "中/英", send: Eisu_toggle, select: english }
+  eisu_toggle_ABC_english_sm_md_text:
+    { label: "中/英", send: Eisu_toggle, select: english_sm_md }
+  eisu_toggle_en_zh_default_text:
+    { label: "英/中", send: Eisu_toggle, select: default }
+  eisu_toggle_en_zh_default_sm_md_text:
+    { label: "英/中", send: Eisu_toggle, select: default_sm_md }
+  eisu_toggle_返回_default_text:
+    { label: "返回", send: Eisu_toggle, select: default }
+  eisu_toggle_返回_default_sm_md_text:
+    { label: "返回", send: Eisu_toggle, select: default_sm_md }
+
+
   #text
   text_full_period: { label: "。", text: "。" }
   text_full_question_mark: { label: "？", text: "？" }
@@ -781,6 +875,8 @@ preset_keys:
   text_fullbrace_left_default:
     { label: "｛", text: "｛｝{left}{eisu_toggle_default}" }
   text_fullrightbrace_default: { label: "｝", text: "｝{eisu_toggle_default}" }
+  text_halfleftbrace_default: { label: "{", text: "{{eisu_toggle_default}" }
+  text_halfrightbrace_default: { label: "}", text: "}{eisu_toggle_default}" }
   # 〈〉
   text_fullsinglechineseguillemet_left_default:
     { label: "<", text: "〈〉{Left}{eisu_toggle_default}" }
@@ -801,9 +897,9 @@ preset_keys:
   text_full_quotation_mark_left_default_no_functional:
     { label: "“", text: "“”{Left}{eisu_toggle_default}", functional: false }
   text_fullquotationmarkright_default:
-    { label: "〞", text: "〞{eisu_toggle_default}" }
+    { label: "”", text: "”{eisu_toggle_default}" }
   text_full_quotation_mark_right_default_no_functional:
-    { label: "〞", text: "〞{eisu_toggle_default}", functional: false }
+    { label: "”", text: "”{eisu_toggle_default}", functional: false }
   text_quotationmark_left_default:
     { label: "〝", text: "〝〞{Left}{eisu_toggle_default}" }
   text_fullquotationmark_left: { label: "“", text: "“”{Left}" }
@@ -1006,6 +1102,21 @@ preset_keys:
   commit_halfdollar: { label: "$", commit: "$" }
   commit_fullquestionmark: { label: "？", commit: "？" }
   commit_half_questionmark: { label: "?", commit: "?" }
+  commit_half_exclamationpoint: { label: "!", commit: "!" }
+  commit_three_dots: { label: "...", commit: "..." }
+  commit_dun: { label: "、", commit: "、" }
+  commit_ellipsis: { label: "…", commit: "…" }
+  commit_cn_ellipsis: { label: "……", commit: "……" }
+  commit_yen: { label: "¥", commit: "¥" }
+  commit_middledot: { label: "·", commit: "·" }
+  commit_emdash: { label: "—", commit: "—" }
+  commit_full_lparen: { label: "（", commit: "（" }
+  commit_full_rparen: { label: "）", commit: "）" }
+  commit_full_square_l: { label: "【", commit: "【" }
+  commit_full_square_r: { label: "】", commit: "】" }
+  commit_full_book_l: { label: "《", commit: "《" }
+  commit_full_book_r: { label: "》", commit: "》" }
+  commit_halfpipe: { label: "|", commit: "|" }
   commit_fullexclamationpoint: { label: "！", commit: "！" }
   commit_fullcomma: { label: "，", commit: "，" }
   commit_fulldot: { label: "。", commit: "。" }
@@ -1152,6 +1263,29 @@ preset_keys:
       command: candidate.clear,
       option: "",
     }
+  #语音识别（点击图标）
+  # 支持系统：鸿蒙
+  function_common_speech_recognition:
+    {
+      type: command,
+      icon: "mic_circle.svg",
+      label: "语音识别",
+      send: function,
+      command: speech.start,
+      option: "",
+    }
+  #手写找字
+  # 支持系统：鸿蒙
+  function_handwriting_find:
+    {
+      type: command,
+      icon: "hand_scribble.svg",
+      label: "手写找字",
+      send: function,
+      command: handwriting.find,
+      option: "",
+    }
+
   #更多设置
   # 支持系统：鸿蒙
   function_common_open_host:
