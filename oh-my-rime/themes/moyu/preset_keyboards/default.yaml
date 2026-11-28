@@ -30,38 +30,38 @@ preset_keyboards:
     menu:  { events: [ eisu_toggle_emoji, eisu_toggle_clip_board, function_handwriting_find, eisu_toggle_one_hand_board ] }
     keys:
     # 1
-    - { click: q, label: Q, swipe_up: send_1 }
-    - { click: w, label: W, swipe_up: send_2 }
-    - { click: e, label: E, swipe_up: send_3 }
-    - { click: r, label: R, swipe_up: send_4 }
-    - { click: t, label: T, swipe_up: send_5 }
-    - { click: y, label: Y, swipe_up: send_6 }
-    - { click: u, label: U, swipe_up: send_7 }
-    - { click: i, label: I, swipe_up: send_8 }
-    - { click: o, label: O, swipe_up: send_9 }
-    - { click: p, label: P, swipe_up: send_0 }
+    - { click: q, label: Q, swipe_up: send_1, long_click: [send_1] }
+    - { click: w, label: W, swipe_up: send_2, long_click: [send_2] }
+    - { click: e, label: E, swipe_up: send_3, long_click: [send_3] }
+    - { click: r, label: R, swipe_up: send_4, long_click: [send_4] }
+    - { click: t, label: T, swipe_up: send_5, long_click: [send_5] }
+    - { click: y, label: Y, swipe_up: send_6, long_click: [send_6] }
+    - { click: u, label: U, swipe_up: send_7, long_click: [send_7] }
+    - { click: i, label: I, swipe_up: send_8, long_click: [send_8] }
+    - { click: o, label: O, swipe_up: send_9, long_click: [send_9] }
+    - { click: p, label: P, swipe_up: send_0, long_click: [send_0] }
     - { width: 5 }
     #2
-    - { click: a, label: A, swipe_up: send_bang }
-    - { click: s, label: S, swipe_up: send_at }
-    - { click: d, label: D, swipe_up: send_hash }
-    - { click: f, label: F, swipe_up: send_dollar }
-    - { click: g, label: G, swipe_up: send_percent }
-    - { click: h, label: H, swipe_up: send_amp }
-    - { click: j, label: J, swipe_up: send_star }
-    - { click: k, label: K, swipe_up: send_lparen }
-    - { click: l, label: L, swipe_up: send_rparen }
+    - { click: a, label: A, swipe_up: send_bang, long_click: [send_bang] }
+    - { click: s, label: S, swipe_up: send_at, long_click: [send_at] }
+    - { click: d, label: D, swipe_up: send_hash, long_click: [send_hash] }
+    - { click: f, label: F, swipe_up: send_dollar, long_click: [send_dollar] }
+    - { click: g, label: G, swipe_up: send_percent, long_click: [send_percent] }
+    - { click: h, label: H, swipe_up: send_amp, long_click: [send_amp] }
+    - { click: j, label: J, swipe_up: send_star, long_click: [send_star] }
+    - { click: k, label: K, swipe_up: send_lparen, long_click: [send_lparen] }
+    - { click: l, label: L, swipe_up: send_rparen, long_click: [send_rparen] }
     - { width: 5 }
     #3
     - { click: shift, width: 13, name: shift, preview: false }
     - { width: 2 }
-    - { click: z, label: Z, swipe_up: send_quote }
-    - { click: x, label: X, swipe_up: send_slash }
-    - { click: c, label: C, swipe_up: send_minus }
-    - { click: v, label: V, swipe_up: send_underscore }
-    - { click: b, label: B, swipe_up: send_colon }
-    - { click: n, label: N, swipe_up: send_semicolon_text }
-    - { click: m, label: M, swipe_up: send_question }
+    - { click: z, label: Z, swipe_up: send_quote, long_click: [send_quote] }
+    - { click: x, label: X, swipe_up: send_slash, long_click: [send_slash] }
+    - { click: c, label: C, swipe_up: send_minus, long_click: [send_minus] }
+    - { click: v, label: V, swipe_up: send_underscore, long_click: [send_underscore] }
+    - { click: b, label: B, swipe_up: send_colon, long_click: [send_colon] }
+    - { click: n, label: N, swipe_up: send_semicolon_text, long_click: [send_semicolon_text] }
+    - { click: m, label: M, swipe_up: send_question, long_click: [send_question] }
     - { width: 2 }
     - { click: backspace, width: 13, name: backspace, preview: false, swipe_up: function_keyboard_clearAll, swipe_down: function_keyboard_undo }
     #4
@@ -104,38 +104,38 @@ preset_keyboards:
     menu:  { events: [ eisu_toggle_emoji, eisu_toggle_clip_board, function_handwriting_find, eisu_toggle_one_hand_board ] }
     keys:
     # 1
-    - { click: q, label: Q, swipe_up: send_1 }
-    - { click: w, label: W, swipe_up: send_2 }
-    - { click: e, label: E, swipe_up: send_3 }
-    - { click: r, label: R, swipe_up: send_4 }
-    - { click: t, label: T, swipe_up: send_5 }
-    - { click: y, label: Y, swipe_up: send_6 }
-    - { click: u, label: U, swipe_up: send_7 }
-    - { click: i, label: I, swipe_up: send_8 }
-    - { click: o, label: O, swipe_up: send_9 }
-    - { click: p, label: P, swipe_up: send_0 }
+    - { click: q, label: Q, swipe_up: send_1, long_click: [send_1] }
+    - { click: w, label: W, swipe_up: send_2, long_click: [send_2] }
+    - { click: e, label: E, swipe_up: send_3, long_click: [send_3] }
+    - { click: r, label: R, swipe_up: send_4, long_click: [send_4] }
+    - { click: t, label: T, swipe_up: send_5, long_click: [send_5] }
+    - { click: y, label: Y, swipe_up: send_6, long_click: [send_6] }
+    - { click: u, label: U, swipe_up: send_7, long_click: [send_7] }
+    - { click: i, label: I, swipe_up: send_8, long_click: [send_8] }
+    - { click: o, label: O, swipe_up: send_9, long_click: [send_9] }
+    - { click: p, label: P, swipe_up: send_0, long_click: [send_0] }
     - { width: 5 }
     #2
-    - { click: a, label: A, swipe_up: send_bang }
-    - { click: s, label: S, swipe_up: send_at }
-    - { click: d, label: D, swipe_up: send_hash }
-    - { click: f, label: F, swipe_up: send_dollar }
-    - { click: g, label: G, swipe_up: send_percent }
-    - { click: h, label: H, swipe_up: send_amp }
-    - { click: j, label: J, swipe_up: send_star }
-    - { click: k, label: K, swipe_up: send_lparen }
-    - { click: l, label: L, swipe_up: send_rparen }
+    - { click: a, label: A, swipe_up: send_bang, long_click: [send_bang] }
+    - { click: s, label: S, swipe_up: send_at, long_click: [send_at] }
+    - { click: d, label: D, swipe_up: send_hash, long_click: [send_hash] }
+    - { click: f, label: F, swipe_up: send_dollar, long_click: [send_dollar] }
+    - { click: g, label: G, swipe_up: send_percent, long_click: [send_percent] }
+    - { click: h, label: H, swipe_up: send_amp, long_click: [send_amp] }
+    - { click: j, label: J, swipe_up: send_star, long_click: [send_star] }
+    - { click: k, label: K, swipe_up: send_lparen, long_click: [send_lparen] }
+    - { click: l, label: L, swipe_up: send_rparen, long_click: [send_rparen] }
     - { width: 5 }
     #3
     - { click: shift, width: 13, name: shift, preview: false }
     - { width: 2 }
-    - { click: z, label: Z, swipe_up: send_quote }
-    - { click: x, label: X, swipe_up: send_slash }
-    - { click: c, label: C, swipe_up: send_minus }
-    - { click: v, label: V, swipe_up: send_underscore }
-    - { click: b, label: B, swipe_up: send_colon }
-    - { click: n, label: N, swipe_up: send_semicolon_text }
-    - { click: m, label: M, swipe_up: send_question }
+    - { click: z, label: Z, swipe_up: send_quote, long_click: [send_quote] }
+    - { click: x, label: X, swipe_up: send_slash, long_click: [send_slash] }
+    - { click: c, label: C, swipe_up: send_minus, long_click: [send_minus] }
+    - { click: v, label: V, swipe_up: send_underscore, long_click: [send_underscore] }
+    - { click: b, label: B, swipe_up: send_colon, long_click: [send_colon] }
+    - { click: n, label: N, swipe_up: send_semicolon_text, long_click: [send_semicolon_text] }
+    - { click: m, label: M, swipe_up: send_question, long_click: [send_question] }
     - { width: 2 }
     - { click: backspace, width: 13, name: backspace, preview: false, swipe_up: function_keyboard_clearAll, swipe_down: function_keyboard_undo }
     #4
@@ -178,38 +178,38 @@ preset_keyboards:
     menu:  { events: [ eisu_toggle_emoji, eisu_toggle_clip_board, function_handwriting_find, eisu_toggle_one_hand_board ] }
     keys:
     # 1
-    - { click: q, label: q, swipe_up: send_1 }
-    - { click: w, label: w, swipe_up: send_2 }
-    - { click: e, label: e, swipe_up: send_3 }
-    - { click: r, label: r, swipe_up: send_4 }
-    - { click: t, label: t, swipe_up: send_5 }
-    - { click: y, label: y, swipe_up: send_6 }
-    - { click: u, label: u, swipe_up: send_7 }
-    - { click: i, label: i, swipe_up: send_8 }
-    - { click: o, label: o, swipe_up: send_9 }
-    - { click: p, label: p, swipe_up: send_0 }
+    - { click: q, label: q, swipe_up: send_1, long_click: [send_1] }
+    - { click: w, label: w, swipe_up: send_2, long_click: [send_2] }
+    - { click: e, label: e, swipe_up: send_3, long_click: [send_3] }
+    - { click: r, label: r, swipe_up: send_4, long_click: [send_4] }
+    - { click: t, label: t, swipe_up: send_5, long_click: [send_5] }
+    - { click: y, label: y, swipe_up: send_6, long_click: [send_6] }
+    - { click: u, label: u, swipe_up: send_7, long_click: [send_7] }
+    - { click: i, label: i, swipe_up: send_8, long_click: [send_8] }
+    - { click: o, label: o, swipe_up: send_9, long_click: [send_9] }
+    - { click: p, label: p, swipe_up: send_0, long_click: [send_0] }
     - { width: 5 }
     #2
-    - { click: a, label: a, swipe_up: send_bang }
-    - { click: s, label: s, swipe_up: send_at }
-    - { click: d, label: d, swipe_up: send_hash }
-    - { click: f, label: f, swipe_up: send_dollar }
-    - { click: g, label: g, swipe_up: send_percent }
-    - { click: h, label: h, swipe_up: send_amp }
-    - { click: j, label: j, swipe_up: send_star }
-    - { click: k, label: k, swipe_up: send_lparen }
-    - { click: l, label: l, swipe_up: send_rparen }
+    - { click: a, label: a, swipe_up: send_bang, long_click: [send_bang] }
+    - { click: s, label: s, swipe_up: send_at, long_click: [send_at] }
+    - { click: d, label: d, swipe_up: send_hash, long_click: [send_hash] }
+    - { click: f, label: f, swipe_up: send_dollar, long_click: [send_dollar] }
+    - { click: g, label: g, swipe_up: send_percent, long_click: [send_percent] }
+    - { click: h, label: h, swipe_up: send_amp, long_click: [send_amp] }
+    - { click: j, label: j, swipe_up: send_star, long_click: [send_star] }
+    - { click: k, label: k, swipe_up: send_lparen, long_click: [send_lparen] }
+    - { click: l, label: l, swipe_up: send_rparen, long_click: [send_rparen] }
     - { width: 5 }
     #3
     - { click: shift, width: 13, name: shift, preview: false }
     - { width: 2 }
-    - { click: z, label: z, swipe_up: send_quote }
-    - { click: x, label: x, swipe_up: send_slash }
-    - { click: c, label: c, swipe_up: send_minus }
-    - { click: v, label: v, swipe_up: send_underscore }
-    - { click: b, label: b, swipe_up: send_colon }
-    - { click: n, label: n, swipe_up: send_semicolon_text }
-    - { click: m, label: m, swipe_up: send_question }
+    - { click: z, label: z, swipe_up: send_quote, long_click: [send_quote] }
+    - { click: x, label: x, swipe_up: send_slash, long_click: [send_slash] }
+    - { click: c, label: c, swipe_up: send_minus, long_click: [send_minus] }
+    - { click: v, label: v, swipe_up: send_underscore, long_click: [send_underscore] }
+    - { click: b, label: b, swipe_up: send_colon, long_click: [send_colon] }
+    - { click: n, label: n, swipe_up: send_semicolon_text, long_click: [send_semicolon_text] }
+    - { click: m, label: m, swipe_up: send_question, long_click: [send_question] }
     - { width: 2 }
     - { click: backspace, width: 13, name: backspace, preview: false, swipe_up: function_keyboard_clearAll, swipe_down: function_keyboard_undo }
     #4
@@ -252,38 +252,38 @@ preset_keyboards:
     menu:  { events: [ eisu_toggle_emoji, eisu_toggle_clip_board, function_handwriting_find, eisu_toggle_one_hand_board ] }
     keys:
     # 1
-    - { click: q, label: q, swipe_up: send_1 }
-    - { click: w, label: w, swipe_up: send_2 }
-    - { click: e, label: e, swipe_up: send_3 }
-    - { click: r, label: r, swipe_up: send_4 }
-    - { click: t, label: t, swipe_up: send_5 }
-    - { click: y, label: y, swipe_up: send_6 }
-    - { click: u, label: u, swipe_up: send_7 }
-    - { click: i, label: i, swipe_up: send_8 }
-    - { click: o, label: o, swipe_up: send_9 }
-    - { click: p, label: p, swipe_up: send_0 }
+    - { click: q, label: q, swipe_up: send_1, long_click: [send_1] }
+    - { click: w, label: w, swipe_up: send_2, long_click: [send_2] }
+    - { click: e, label: e, swipe_up: send_3, long_click: [send_3] }
+    - { click: r, label: r, swipe_up: send_4, long_click: [send_4] }
+    - { click: t, label: t, swipe_up: send_5, long_click: [send_5] }
+    - { click: y, label: y, swipe_up: send_6, long_click: [send_6] }
+    - { click: u, label: u, swipe_up: send_7, long_click: [send_7] }
+    - { click: i, label: i, swipe_up: send_8, long_click: [send_8] }
+    - { click: o, label: o, swipe_up: send_9, long_click: [send_9] }
+    - { click: p, label: p, swipe_up: send_0, long_click: [send_0] }
     - { width: 5 }
     #2
-    - { click: a, label: a, swipe_up: send_bang }
-    - { click: s, label: s, swipe_up: send_at }
-    - { click: d, label: d, swipe_up: send_hash }
-    - { click: f, label: f, swipe_up: send_dollar }
-    - { click: g, label: g, swipe_up: send_percent }
-    - { click: h, label: h, swipe_up: send_amp }
-    - { click: j, label: j, swipe_up: send_star }
-    - { click: k, label: k, swipe_up: send_lparen }
-    - { click: l, label: l, swipe_up: send_rparen }
+    - { click: a, label: a, swipe_up: send_bang, long_click: [send_bang] }
+    - { click: s, label: s, swipe_up: send_at, long_click: [send_at] }
+    - { click: d, label: d, swipe_up: send_hash, long_click: [send_hash] }
+    - { click: f, label: f, swipe_up: send_dollar, long_click: [send_dollar] }
+    - { click: g, label: g, swipe_up: send_percent, long_click: [send_percent] }
+    - { click: h, label: h, swipe_up: send_amp, long_click: [send_amp] }
+    - { click: j, label: j, swipe_up: send_star, long_click: [send_star] }
+    - { click: k, label: k, swipe_up: send_lparen, long_click: [send_lparen] }
+    - { click: l, label: l, swipe_up: send_rparen, long_click: [send_rparen] }
     - { width: 5 }
     #3
     - { click: shift, width: 13, name: shift, preview: false }
     - { width: 2 }
-    - { click: z, label: z, swipe_up: send_quote }
-    - { click: x, label: x, swipe_up: send_slash }
-    - { click: c, label: c, swipe_up: send_minus }
-    - { click: v, label: v, swipe_up: send_underscore }
-    - { click: b, label: b, swipe_up: send_colon }
-    - { click: n, label: n, swipe_up: send_semicolon_text }
-    - { click: m, label: m, swipe_up: send_question }
+    - { click: z, label: z, swipe_up: send_quote, long_click: [send_quote] }
+    - { click: x, label: x, swipe_up: send_slash, long_click: [send_slash] }
+    - { click: c, label: c, swipe_up: send_minus, long_click: [send_minus] }
+    - { click: v, label: v, swipe_up: send_underscore, long_click: [send_underscore] }
+    - { click: b, label: b, swipe_up: send_colon, long_click: [send_colon] }
+    - { click: n, label: n, swipe_up: send_semicolon_text, long_click: [send_semicolon_text] }
+    - { click: m, label: m, swipe_up: send_question, long_click: [send_question] }
     - { width: 2 }
     - { click: backspace, width: 13, name: backspace, preview: false, swipe_up: function_keyboard_clearAll, swipe_down: function_keyboard_undo }
     #4
